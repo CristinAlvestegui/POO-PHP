@@ -1,4 +1,5 @@
 <?php
+    namespace PHP\Modelo;
     //chamamos outra classe
     //include //menos seguro, e n mostra os erros, continua rodando a página mesmo assim
     //require //obriga a mostrar os error e roda somente se a classe foir carregada, podemos rodar varioas metodos varias vezes
@@ -26,6 +27,6 @@
     echo "<br><br>";
     $conta->trans($otherCon, $conta, 4500);
     $conta->imprit();
-    echo "<br><br>s"
+    echo "<br><br>s";
     $otherCon->imprit();
 ?>

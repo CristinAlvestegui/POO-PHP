@@ -1,5 +1,8 @@
 <?php
+    namespace PHP\Modelo\Conta;
+
     require_once("Cliente.php");
+    
     class Conta{
             
         private float $saldoTitu;

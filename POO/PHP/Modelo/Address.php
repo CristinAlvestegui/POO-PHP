@@ -1,4 +1,6 @@
 <?php
+    namespace PHP\Modelo;
+    
     class Address {
         private string $rua;
         private string $CEP;
@@ -23,75 +25,75 @@
         }
 
         //Get SET
-        public function getRua(){
+        public function getRua() : string{
             return $this->rua = $rua;
         }
 
-        public function setRua(){
+        public function setRua(string $rua) : void{
             $this->rua = $rua;
         }
 
-        public function getCEP(){
+        public function getCEP() : string{
             return $this->CEP = $CEP;
         }
 
-        public function setCEP(){
+        public function setCEP(string $rua) : void{
             $this->CEP = $CEP;
         }
 
-        public function getNum(){
+        public function getNum() : int{
             return $this->numero = $numero;
         }
 
-        public function setNum(){
+        public function setNum(int $numero) : void{
             $this->numero = $numero;
         }
 
-        public function getComple(){
+        public function getComple() : string{
             return $this->comple = $comple;
         }
 
-        public function setComple(){
+        public function setComple(string $comple) : void{
             $this->comple = $comple;
         }
 
-        public function getCidade(){
+        public function getCidade() : string{
             return $this->cidade = $cidade;
         }
 
-        public function setCidade(){
+        public function setCidade(string $cidade) : void{
             $this->cidade = $cidade;
         }
 
-        public function getBairro(){
+        public function getBairro() : string{
             return $this->bairro = $bairro;
         }
 
-        public function setBairro(){
+        public function setBairro(string $bairro) : void{
             $this->bairro = $bairro;
         }
 
-        public function getEstado(){
+        public function getEstado() : string{
             return $this->estado = $estado;
         }
 
-        public function setEstado(){
+        public function setEstado(string $estado) : void{
             $this->estado = $estado;
         }
 
-        public function getPais(){
+        public function getPais() : string{
             return $this->pais = $pais;
         }
 
-        public function setPais(){
+        public function setPais(string $pais) : void{
             $this->pais = $pais;
         }
 
-        public function getUF(){
+        public function getUF() : string{
             return $this->UF = $UF;
         }
 
-        public function setPais(){
+        public function setUF(string $UF) : void{
             $this->UF = $UF;
         }
     }//fima da Classe Endereço
