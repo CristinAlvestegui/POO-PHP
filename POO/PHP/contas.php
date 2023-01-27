@@ -1,35 +1,19 @@
 <?php
+    require_once("Cliente.php");
     class Conta{
-
-        private string $cpfTitu;
-        private string $nomeTitu;
+            
         private float $saldoTitu;
+        private Cliente $cli;
 
-        public function __construct(string $cpf, string $nome, float $saldo){
+        public function __construct(Cliente $cli, float $saldo){
             //aqui instanciamos as variáveis
-            $this->setCPF($cpf); //estamos fazendo referencia a variavel definida na classe
-            $this->setnome($nome);
+            $this->cli = $cli;
             $this->setSaldo($saldo);
+
         }//Fim do construtor
 
 
         //métodos Get Set
-        public function getCPF() : string{
-            return $this->cpfTitu;
-        }
-
-        public function setCPF(string $cpf) : void {
-            $this->cpfTitu = $cpf;
-        }
-
-        public function getNome() : string{
-            return $this->nomeTitu;
-        }
-
-        public function setNome(string $nome) : void{
-            $this->nomeTitu = $nome;
-        }
-
         public function getSaldo() : float{
             return $this->saldoTitu;
         }
@@ -64,13 +48,6 @@
                 return;
             }
             echo "<br>Impossível realizar a transferência<br>";
-        }
-
-
-
-        //Mostrar os detalhes da conta na tela
-        public function imprit() : void{
-            echo "<br>CPF: ".$this->getCPF()."<br>Nome: ".$this->getNome()."<br>Saldo: ".$this->getSaldo()." R$"; //Quando usamos this na mesma classe, devemos chamar com this tbm
         }
     }//Fim da classe
 
