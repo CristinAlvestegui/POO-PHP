@@ -3,11 +3,11 @@
     
     require_once("Address.php");
     
-    class Pessoa{
-        private string $cpf;
-        private string $nome;
-        private string $telefone;
-        private Address $endereco;
+    Abstract class Pessoa{
+        protected string $cpf;
+        protected string $nome;
+        protected string $telefone;
+        protected Address $endereco;
         //public string $endereco; endereço implica muitas informações, como rua, av, estado, municio, CEP ect.
         //vamos criar uma classe especifica para endereço.
 
